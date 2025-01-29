@@ -32,6 +32,7 @@ VENDOR_SECURITY_PATCH := 2019-08-01
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # SELinux
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/biometrics/sepolicy
 
